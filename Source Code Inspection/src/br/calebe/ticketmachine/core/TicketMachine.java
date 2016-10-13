@@ -12,11 +12,12 @@ public class TicketMachine {
 
     protected int valor;
     protected int saldo;
-    protected int[] papelMoeda = {2, 5, 10, 20, 50, 100};
+    protected int troco;
 
     public TicketMachine(int valor) {
         this.valor = valor;
         this.saldo = 0;
+        this.troco = 0;
     }
 
     public void inserir(int quantia) throws PapelMoedaInvalidaException {
@@ -33,11 +34,11 @@ public class TicketMachine {
     }
 
     public int getSaldo() {
-        return saldo;
+        return this.saldo;
     }
 
     public Iterator<Integer> getTroco() {
-        return null;
+        return this.troco;
     }
 
     public String imprimir() throws SaldoInsuficienteException {
