@@ -2,7 +2,7 @@ package br.calebe.ticketmachine.exception;
 
 /**
  *
- * @author Calebe de Paula Bianchini
+ * @author Diego Araujo
  */
 public class SaldoInsuficienteException extends Exception {
 }
