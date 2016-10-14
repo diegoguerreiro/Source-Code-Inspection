@@ -2,12 +2,12 @@ package br.calebe.ticketmachine.core;
 
 /**
  *
- * @author Calebe de Paula Bianchini
+ * @author Diego Araujo
  */
 public class PapelMoeda {
 
-    protected int valor;
-    protected int quantidade;
+    protected int valor = 0;
+    protected int quantidade = 0;
 
     public PapelMoeda(int valor, int quantidade) {
         this.valor = valor;
