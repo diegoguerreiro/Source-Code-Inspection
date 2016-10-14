@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 /**
  *
- * @author Calebe de Paula Bianchini
+ * @author Diego Araujo
  */
 class Troco {
 
@@ -45,7 +45,7 @@ class Troco {
     }
 
     public Iterator<PapelMoeda> getIterator() {
-        return new TrocoIterator(this);
+        return new TrocoIterator(this.troco);
     }
 
     class TrocoIterator implements Iterator<PapelMoeda> {
